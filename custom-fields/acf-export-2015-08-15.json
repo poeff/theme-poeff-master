@@ -1,0 +1,3540 @@
+[
+    {
+        "key": "group_53ee47d1a72ab",
+        "title": "Auto Page",
+        "fields": [
+            {
+                "key": "field_53ee47ee4a33e",
+                "label": "Note",
+                "name": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "This Page Content is automatically generated.",
+                "esc_html": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "page-templates\/content-history.php"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "acf_after_title",
+        "style": "seamless",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "the_content"
+        ],
+        "active": 1,
+        "description": ""
+    },
+    {
+        "key": "group_55b45201e1f1f",
+        "title": "Blog Details",
+        "fields": [
+            {
+                "key": "field_55be3041d2665",
+                "label": "Custom Excerpt",
+                "name": "blog_excerpt",
+                "type": "wysiwyg",
+                "instructions": "(Optional) Add custom excerpt for the Homepage News Feed.<br><b>Note:<\/b> For excerpt to appear on home page, the <em>Show on Home<\/em> option must be set to <em>Yes<\/em>.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "tabs": "all",
+                "toolbar": "full",
+                "media_upload": 0
+            },
+            {
+                "key": "field_55b45268490ad",
+                "label": "Author Name",
+                "name": "blog_author_name",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_55b45285490ae",
+                "label": "Author Bio",
+                "name": "blog_author_bio",
+                "type": "wysiwyg",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "tabs": "all",
+                "toolbar": "basic",
+                "media_upload": 0
+            },
+            {
+                "key": "field_55b452a5490af",
+                "label": "Author Photo",
+                "name": "blog_author_photo",
+                "type": "image",
+                "instructions": "Image size: 80 x 80 pixels",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "full",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_category",
+                    "operator": "==",
+                    "value": "category:blog"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    },
+    {
+        "key": "group_53c497c1e4071",
+        "title": "Blog Page Settings",
+        "fields": [
+            {
+                "key": "field_53b73fe432f94",
+                "label": "Blog Feed",
+                "name": "blog_feed",
+                "type": "taxonomy",
+                "instructions": "Select post categories to appear on Blog",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "taxonomy": "category",
+                "field_type": "checkbox",
+                "allow_null": 0,
+                "load_save_terms": 0,
+                "return_format": "id",
+                "multiple": 0,
+                "add_term": 1,
+                "load_terms": 0,
+                "save_terms": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "page-templates\/content-blog.php"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "the_content"
+        ],
+        "active": 1,
+        "description": ""
+    },
+    {
+        "key": "group_53c497c1e68d9",
+        "title": "Film Details",
+        "fields": [
+            {
+                "key": "field_53b755c499eb8",
+                "label": "Information",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_53b7561699eb9",
+                "label": "Filmmakers",
+                "name": "filmmakers",
+                "type": "repeater",
+                "instructions": "<b>Note:<\/b> Only the first filmmaker Name will appear on the Archive Page.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "min": 1,
+                "max": "",
+                "layout": "table",
+                "button_label": "Add Filmmaker",
+                "sub_fields": [
+                    {
+                        "key": "field_53b7563a99eba",
+                        "label": "Role",
+                        "name": "filmmaker_role",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "Directed by",
+                        "placeholder": "ie. Written & Directed by",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": "",
+                        "readonly": 0,
+                        "disabled": 0
+                    },
+                    {
+                        "key": "field_53e994f544b9d",
+                        "label": "Name",
+                        "name": "filmmaker_name",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "ie.  Orson Welles",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": "",
+                        "readonly": 0,
+                        "disabled": 0
+                    }
+                ]
+            },
+            {
+                "key": "field_53b7567e99ebc",
+                "label": "Country",
+                "name": "film_country",
+                "type": "select",
+                "instructions": "Select multiple values if needed.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "Afghanistan": "Afghanistan",
+                    "Albania": "Albania",
+                    "Algeria": "Algeria",
+                    "Andorra": "Andorra",
+                    "Angola": "Angola",
+                    "Antigua & Deps": "Antigua & Deps",
+                    "Argentina": "Argentina",
+                    "Armenia": "Armenia",
+                    "Australia": "Australia",
+                    "Austria": "Austria",
+                    "Azerbaijan": "Azerbaijan",
+                    "Bahamas": "Bahamas",
+                    "Bahrain": "Bahrain",
+                    "Bangladesh": "Bangladesh",
+                    "Barbados": "Barbados",
+                    "Belarus": "Belarus",
+                    "Belgium": "Belgium",
+                    "Belize": "Belize",
+                    "Benin": "Benin",
+                    "Bhutan": "Bhutan",
+                    "Bolivia": "Bolivia",
+                    "Bosnia Herzegovina": "Bosnia Herzegovina",
+                    "Botswana": "Botswana",
+                    "Brazil": "Brazil",
+                    "Brunei": "Brunei",
+                    "Bulgaria": "Bulgaria",
+                    "Burkina": "Burkina",
+                    "Burundi": "Burundi",
+                    "Cambodia": "Cambodia",
+                    "Cameroon": "Cameroon",
+                    "Canada": "Canada",
+                    "Cape Verde": "Cape Verde",
+                    "Central African Rep": "Central African Rep",
+                    "Chad": "Chad",
+                    "Chile": "Chile",
+                    "China": "China",
+                    "Colombia": "Colombia",
+                    "Comoros": "Comoros",
+                    "Congo": "Congo",
+                    "Democratic Republic of Congo": "Democratic Republic of Congo",
+                    "Costa Rica": "Costa Rica",
+                    "Croatia": "Croatia",
+                    "Cuba": "Cuba",
+                    "Cyprus": "Cyprus",
+                    "Czech Republic": "Czech Republic",
+                    "Darfur": "Darfur",
+                    "Denmark": "Denmark",
+                    "Djibouti": "Djibouti",
+                    "Dominica": "Dominica",
+                    "Dominican Republic": "Dominican Republic",
+                    "East Timor": "East Timor",
+                    "Ecuador": "Ecuador",
+                    "Egypt": "Egypt",
+                    "El Salvador": "El Salvador",
+                    "Equatorial Guinea": "Equatorial Guinea",
+                    "Eritrea": "Eritrea",
+                    "Estonia": "Estonia",
+                    "Ethiopia": "Ethiopia",
+                    "Fiji": "Fiji",
+                    "Finland": "Finland",
+                    "France": "France",
+                    "Gabon": "Gabon",
+                    "Gambia": "Gambia",
+                    "Georgia": "Georgia",
+                    "Germany": "Germany",
+                    "Ghana": "Ghana",
+                    "Greece": "Greece",
+                    "Grenada": "Grenada",
+                    "Guatemala": "Guatemala",
+                    "Guinea": "Guinea",
+                    "Guinea-Bissau": "Guinea-Bissau",
+                    "Guyana": "Guyana",
+                    "Haiti": "Haiti",
+                    "Honduras": "Honduras",
+                    "Hong Kong": "Hong Kong",
+                    "Hungary": "Hungary",
+                    "Iceland": "Iceland",
+                    "India": "India",
+                    "Indonesia": "Indonesia",
+                    "Iran": "Iran",
+                    "Iraq": "Iraq",
+                    "Ireland": "Ireland",
+                    "Israel": "Israel",
+                    "Italy": "Italy",
+                    "Ivory Coast": "Ivory Coast",
+                    "Jamaica": "Jamaica",
+                    "Japan": "Japan",
+                    "Jordan": "Jordan",
+                    "Kazakhstan": "Kazakhstan",
+                    "Kenya": "Kenya",
+                    "Kiribati": "Kiribati",
+                    "Kosovo": "Kosovo",
+                    "Kuwait": "Kuwait",
+                    "Kyrgyzstan": "Kyrgyzstan",
+                    "Laos": "Laos",
+                    "Latvia": "Latvia",
+                    "Lebanon": "Lebanon",
+                    "Lesotho": "Lesotho",
+                    "Liberia": "Liberia",
+                    "Libya": "Libya",
+                    "Liechtenstein": "Liechtenstein",
+                    "Lithuania": "Lithuania",
+                    "Luxembourg": "Luxembourg",
+                    "Macedonia": "Macedonia",
+                    "Madagascar": "Madagascar",
+                    "Malawi": "Malawi",
+                    "Malaysia": "Malaysia",
+                    "Maldives": "Maldives",
+                    "Mali": "Mali",
+                    "Malta": "Malta",
+                    "Marshall Islands": "Marshall Islands",
+                    "Mauritania": "Mauritania",
+                    "Mauritius": "Mauritius",
+                    "Mexico": "Mexico",
+                    "Micronesia": "Micronesia",
+                    "Moldova": "Moldova",
+                    "Monaco": "Monaco",
+                    "Mongolia": "Mongolia",
+                    "Montenegro": "Montenegro",
+                    "Morocco": "Morocco",
+                    "Mozambique": "Mozambique",
+                    "Myanmar (Burma)": "Myanmar (Burma)",
+                    "Namibia": "Namibia",
+                    "Nauru": "Nauru",
+                    "Nepal": "Nepal",
+                    "Netherlands": "Netherlands",
+                    "New Zealand": "New Zealand",
+                    "Nicaragua": "Nicaragua",
+                    "Niger": "Niger",
+                    "Nigeria": "Nigeria",
+                    "N. Korea": "N. Korea",
+                    "Norway": "Norway",
+                    "Oman": "Oman",
+                    "Pakistan": "Pakistan",
+                    "Palau": "Palau",
+                    "Palestine": "Palestine",
+                    "Panama": "Panama",
+                    "Papua New Guinea": "Papua New Guinea",
+                    "Paraguay": "Paraguay",
+                    "Peru": "Peru",
+                    "Philippines": "Philippines",
+                    "Poland": "Poland",
+                    "Portugal": "Portugal",
+                    "Qatar": "Qatar",
+                    "Romania": "Romania",
+                    "Russian Federation": "Russian Federation",
+                    "Russia": "Russia",
+                    "Rwanda": "Rwanda",
+                    "St Kitts & Nevis": "St Kitts & Nevis",
+                    "St Lucia": "St Lucia",
+                    "Saint Vincent & the Grenadines": "Saint Vincent & the Grenadines",
+                    "Samoa": "Samoa",
+                    "San Marino": "San Marino",
+                    "Sao Tome & Principe": "Sao Tome & Principe",
+                    "Saudi Arabia": "Saudi Arabia",
+                    "Scotland": "Scotland",
+                    "Senegal": "Senegal",
+                    "Serbia": "Serbia",
+                    "Seychelles": "Seychelles",
+                    "Sierra Leone": "Sierra Leone",
+                    "Singapore": "Singapore",
+                    "Slovakia": "Slovakia",
+                    "Slovenia": "Slovenia",
+                    "Solomon Islands": "Solomon Islands",
+                    "Somalia": "Somalia",
+                    "S. Africa": "S. Africa",
+                    "S. Korea": "S. Korea",
+                    "S. Sudan": "S. Sudan",
+                    "Spain": "Spain",
+                    "Sri Lanka": "Sri Lanka",
+                    "Sudan": "Sudan",
+                    "Suriname": "Suriname",
+                    "Swaziland": "Swaziland",
+                    "Sweden": "Sweden",
+                    "Switzerland": "Switzerland",
+                    "Syria": "Syria",
+                    "Taiwan": "Taiwan",
+                    "Tajikistan": "Tajikistan",
+                    "Tanzania": "Tanzania",
+                    "Thailand": "Thailand",
+                    "Tibet": "Tibet",
+                    "Togo": "Togo",
+                    "Tonga": "Tonga",
+                    "Trinidad & Tobago": "Trinidad & Tobago",
+                    "Tunisia": "Tunisia",
+                    "Turkey": "Turkey",
+                    "Turkmenistan": "Turkmenistan",
+                    "Tuvalu": "Tuvalu",
+                    "Uganda": "Uganda",
+                    "Ukraine": "Ukraine",
+                    "UAE": "UAE",
+                    "UK": "UK",
+                    "USA": "USA",
+                    "Uruguay": "Uruguay",
+                    "Uzbekistan": "Uzbekistan",
+                    "Vanuatu": "Vanuatu",
+                    "Vatican City": "Vatican City",
+                    "Venezuela": "Venezuela",
+                    "Vietnam": "Vietnam",
+                    "Yemen": "Yemen",
+                    "Zambia": "Zambia",
+                    "Zimbabwe": "Zimbabwe"
+                },
+                "default_value": {
+                    "USA": "USA"
+                },
+                "allow_null": 0,
+                "multiple": 1,
+                "ui": 1,
+                "ajax": 0,
+                "placeholder": "",
+                "disabled": 0,
+                "readonly": 0
+            },
+            {
+                "key": "field_53b758f299ebd",
+                "label": "Running Time",
+                "name": "running_time",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "ie. 119",
+                "prepend": "",
+                "append": "minutes",
+                "formatting": "none",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_53b7597499ec0",
+                "label": "Synopsis",
+                "name": "film_synopsis",
+                "type": "wysiwyg",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "toolbar": "full",
+                "media_upload": 1,
+                "tabs": "all"
+            },
+            {
+                "key": "field_53b7596199ebf",
+                "label": "Media",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_53d576dff0c87",
+                "label": "Trailer",
+                "name": "film_trailer",
+                "type": "oembed",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "width": "",
+                "height": ""
+            },
+            {
+                "key": "field_53b7598d99ec1",
+                "label": "Still",
+                "name": "film_still",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": 0,
+                "min_height": 0,
+                "min_size": 0,
+                "max_width": 0,
+                "max_height": 0,
+                "max_size": 0,
+                "mime_types": ""
+            },
+            {
+                "key": "field_53b75ac399ec6",
+                "label": "Poster",
+                "name": "poster",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": 0,
+                "min_height": 0,
+                "min_size": 0,
+                "max_width": 0,
+                "max_height": 0,
+                "max_size": 0,
+                "mime_types": ""
+            },
+            {
+                "key": "field_53b75ad499ec7",
+                "label": "Film Links",
+                "name": "film_links",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "row_min": "",
+                "row_limit": "",
+                "layout": "row",
+                "button_label": "Add Link",
+                "min": 0,
+                "max": 0,
+                "sub_fields": [
+                    {
+                        "key": "field_53b75af699ec8",
+                        "label": "URL",
+                        "name": "film_url",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "ie. http:\/\/facebook.com\/citizen-kane",
+                        "prepend": "",
+                        "append": "",
+                        "formatting": "none",
+                        "maxlength": "",
+                        "readonly": 0,
+                        "disabled": 0
+                    },
+                    {
+                        "key": "field_53b75b1999ec9",
+                        "label": "Link Text",
+                        "name": "film_url_text",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "Official Website",
+                        "placeholder": "ie. Facebook",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": "",
+                        "readonly": 0,
+                        "disabled": 0
+                    }
+                ]
+            },
+            {
+                "key": "field_53b75b5f99eca",
+                "label": "Best of Fest",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_53f0b0b37e14a",
+                "label": "Best of Fest Winner",
+                "name": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "(If Applicable) \r\n<ul>\r\n<li><b>Selections Page:<\/b> Award winners replace highlighted films.<\/li>\r\n<li><b>Shortcode:<\/b> [best_of_fest year=\"2014\"] <em>assign awards to films in ascending order (from Features to SVP)<\/em><\/li>\r\n<\/ul>",
+                "esc_html": 0
+            },
+            {
+                "key": "field_53b75b6699ecb",
+                "label": "Still",
+                "name": "best_of_still",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": 0,
+                "min_height": 0,
+                "min_size": 0,
+                "max_width": 0,
+                "max_height": 0,
+                "max_size": 0,
+                "mime_types": ""
+            },
+            {
+                "key": "field_53b75bad99ecd",
+                "label": "Excerpt",
+                "name": "best_of_excerpt",
+                "type": "wysiwyg",
+                "instructions": "(Optional) If left empty, full Synopsis will be used.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "tabs": "all",
+                "toolbar": "full",
+                "media_upload": 1
+            },
+            {
+                "key": "field_55b40e51da29c",
+                "label": "screening_day",
+                "name": "screening_day",
+                "type": "text",
+                "instructions": "DO NOT USE!",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "hidden",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "DO NOT USE - WILL BE CREATED BY SCHEDULE",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_55b40e76da29d",
+                "label": "screening_start",
+                "name": "screening_start",
+                "type": "text",
+                "instructions": "DO NOT USE!",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "hidden",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "DO NOT USE - WILL BE CREATED BY SCHEDULE",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "film"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "the_content"
+        ],
+        "active": 1,
+        "description": ""
+    },
+    {
+        "key": "group_55c6313176896",
+        "title": "Home Page News Feed",
+        "fields": [
+            {
+                "key": "field_55c631a06f535",
+                "label": "Show this post on the Home page?",
+                "name": "show_on_home",
+                "type": "radio",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "yes": "Yes",
+                    "no": "No"
+                },
+                "other_choice": 0,
+                "save_other_choice": 0,
+                "default_value": "yes",
+                "layout": "vertical"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "post"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "side",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    },
+    {
+        "key": "group_53c497c20a32c",
+        "title": "Home Page Settings",
+        "fields": [
+            {
+                "key": "field_53b735ece6573",
+                "label": "Content",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_53b73b46ac662",
+                "label": "Slider",
+                "name": "slider",
+                "type": "radio",
+                "instructions": "Turn home page slider on\/off",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": 50,
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "on": "On",
+                    "off": "Off"
+                },
+                "other_choice": 0,
+                "save_other_choice": 0,
+                "default_value": "off",
+                "layout": "horizontal"
+            },
+            {
+                "key": "field_54a58b723839d",
+                "label": "Quicklinks",
+                "name": "quicklinks",
+                "type": "radio",
+                "instructions": "Show Festival Quicklinks Section?",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": 50,
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "on": "On",
+                    "off": "Off"
+                },
+                "other_choice": 0,
+                "save_other_choice": 0,
+                "default_value": "off",
+                "layout": "horizontal"
+            },
+            {
+                "key": "field_53b7365be6575",
+                "label": "News Feed",
+                "name": "news_feed",
+                "type": "taxonomy",
+                "instructions": "Select post categories to appear on Home Page",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": 50,
+                    "class": "",
+                    "id": ""
+                },
+                "taxonomy": "category",
+                "field_type": "checkbox",
+                "allow_null": 0,
+                "load_save_terms": 0,
+                "return_format": "id",
+                "multiple": 0,
+                "add_term": 1,
+                "load_terms": 0,
+                "save_terms": 0
+            },
+            {
+                "key": "field_550f01125ba23",
+                "label": "Feed Length",
+                "name": "feed_length",
+                "type": "number",
+                "instructions": "Select the number of posts to appear on Home Page",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": 50,
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 3,
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": 1,
+                "max": 20,
+                "step": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_53b73684e6576",
+                "label": "Mission Statement",
+                "name": "mission_statement",
+                "type": "wysiwyg",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "tabs": "all",
+                "toolbar": "full",
+                "media_upload": 0
+            },
+            {
+                "key": "field_55b45134cf875",
+                "label": "Quicklinks",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_54a58b723839d",
+                            "operator": "==",
+                            "value": "on"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_54a58bc53839e",
+                "label": "Poster",
+                "name": "ql_poster",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_54a58b723839d",
+                            "operator": "==",
+                            "value": "on"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": 0,
+                "min_height": 0,
+                "min_size": 0,
+                "max_width": 0,
+                "max_height": 0,
+                "max_size": 0,
+                "mime_types": ""
+            },
+            {
+                "key": "field_54a5be7b8e3ea",
+                "label": "Links Header",
+                "name": "ql_header",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_54a58b723839d",
+                            "operator": "==",
+                            "value": "on"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_54a58bfe3839f",
+                "label": "Links",
+                "name": "ql_links",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_54a58b723839d",
+                            "operator": "==",
+                            "value": "on"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "min": "",
+                "max": "",
+                "layout": "row",
+                "button_label": "Add Link",
+                "sub_fields": [
+                    {
+                        "key": "field_54a58c22383a0",
+                        "label": "Page",
+                        "name": "ql_url",
+                        "type": "page_link",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "post_type": [],
+                        "taxonomy": [],
+                        "allow_null": 0,
+                        "multiple": 0
+                    },
+                    {
+                        "key": "field_54a58f2fa48c9",
+                        "label": "Text",
+                        "name": "ql_text",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": "",
+                        "readonly": 0,
+                        "disabled": 0
+                    }
+                ]
+            },
+            {
+                "key": "field_53b7359de6571",
+                "label": "Slides",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_53b73b46ac662",
+                            "operator": "==",
+                            "value": "on"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_53b73cd0ac668",
+                "label": "Slide",
+                "name": "slide",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "min": "",
+                "max": "",
+                "layout": "row",
+                "button_label": "Add Slide",
+                "sub_fields": [
+                    {
+                        "key": "field_53b73cf2ac669",
+                        "label": "Image",
+                        "name": "image",
+                        "type": "image",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "url",
+                        "preview_size": "medium",
+                        "library": "all",
+                        "min_width": 0,
+                        "min_height": 0,
+                        "min_size": 0,
+                        "max_width": 0,
+                        "max_height": 0,
+                        "max_size": 0,
+                        "mime_types": ""
+                    },
+                    {
+                        "key": "field_53b73d05ac66a",
+                        "label": "Caption",
+                        "name": "caption",
+                        "type": "wysiwyg",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "tabs": "all",
+                        "toolbar": "full",
+                        "media_upload": 0
+                    },
+                    {
+                        "key": "field_53b73d11ac66b",
+                        "label": "Link",
+                        "name": "link",
+                        "type": "select",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "none": "None",
+                            "page": "Page",
+                            "film": "Film",
+                            "post": "Post",
+                            "url": "URL"
+                        },
+                        "default_value": [],
+                        "allow_null": 0,
+                        "multiple": 0,
+                        "ui": 0,
+                        "ajax": 0,
+                        "placeholder": "",
+                        "disabled": 0,
+                        "readonly": 0
+                    },
+                    {
+                        "key": "field_53b73d59ac66c",
+                        "label": "Page",
+                        "name": "page_link",
+                        "type": "page_link",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_53b73d11ac66b",
+                                    "operator": "==",
+                                    "value": "page"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "post_type": [
+                            "page"
+                        ],
+                        "allow_null": 0,
+                        "multiple": 0,
+                        "taxonomy": []
+                    },
+                    {
+                        "key": "field_53b73d84ac66d",
+                        "label": "Film",
+                        "name": "film_link",
+                        "type": "page_link",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_53b73d11ac66b",
+                                    "operator": "==",
+                                    "value": "film"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "post_type": [
+                            "film"
+                        ],
+                        "allow_null": 0,
+                        "multiple": 0,
+                        "taxonomy": []
+                    },
+                    {
+                        "key": "field_53b73db9ac66e",
+                        "label": "Post",
+                        "name": "post_link",
+                        "type": "page_link",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_53b73d11ac66b",
+                                    "operator": "==",
+                                    "value": "post"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "post_type": [
+                            "post"
+                        ],
+                        "allow_null": 0,
+                        "multiple": 0,
+                        "taxonomy": []
+                    },
+                    {
+                        "key": "field_53b73dcdac66f",
+                        "label": "URL",
+                        "name": "url_link",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_53b73d11ac66b",
+                                    "operator": "==",
+                                    "value": "url"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "formatting": "none",
+                        "maxlength": "",
+                        "readonly": 0,
+                        "disabled": 0
+                    }
+                ]
+            },
+            {
+                "key": "field_53b869cb11e81",
+                "label": "Slider Options",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_53b73b46ac662",
+                            "operator": "==",
+                            "value": "on"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_53b73bd5ac664",
+                "label": "Slide Speed",
+                "name": "timeout",
+                "type": "text",
+                "instructions": "Use '0' to turn autoplay off",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_53b73b46ac662",
+                            "operator": "==",
+                            "value": "on"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 8000,
+                "placeholder": "",
+                "prepend": "",
+                "append": "milliseconds",
+                "formatting": "none",
+                "maxlength": 6,
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_53b73c2bac665",
+                "label": "Transition",
+                "name": "fx",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_53b73b46ac662",
+                            "operator": "==",
+                            "value": "on"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "scrollHorz": "Scroll",
+                    "fade": "Cross Fade",
+                    "fadeout": "Fade Out",
+                    "none": "None"
+                },
+                "default_value": {
+                    "scrollHorz": "scrollHorz"
+                },
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "ajax": 0,
+                "placeholder": "",
+                "disabled": 0,
+                "readonly": 0
+            },
+            {
+                "key": "field_53b73c59ac666",
+                "label": "Navigation",
+                "name": "navigation",
+                "type": "radio",
+                "instructions": "Enable previous & next buttons",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_53b73b46ac662",
+                            "operator": "==",
+                            "value": "on"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "on": "On",
+                    "off": "Off"
+                },
+                "other_choice": 0,
+                "save_other_choice": 0,
+                "default_value": "",
+                "layout": "vertical"
+            },
+            {
+                "key": "field_53b73c97ac667",
+                "label": "Pager",
+                "name": "pager",
+                "type": "radio",
+                "instructions": "Enable pagination buttons",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_53b73b46ac662",
+                            "operator": "==",
+                            "value": "on"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "on": "On",
+                    "off": "Off"
+                },
+                "other_choice": 0,
+                "save_other_choice": 0,
+                "default_value": "",
+                "layout": "vertical"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_type",
+                    "operator": "==",
+                    "value": "front_page"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "the_content"
+        ],
+        "active": 1,
+        "description": ""
+    },
+    {
+        "key": "group_53c497c21d8ca",
+        "title": "Page Builder",
+        "fields": [
+            {
+                "key": "field_53d5731462b7b",
+                "label": "Instructions:",
+                "name": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "\u2022 Each Row can have 1-4 Columns\r\n\u2022 Combined column widths within each row should not exceed 100%\r\n\u2022\u00a0All columns will have 100% width on mobile devices",
+                "esc_html": 0
+            },
+            {
+                "key": "field_53b84b8072617",
+                "label": "Row",
+                "name": "row",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": 100,
+                    "class": "",
+                    "id": ""
+                },
+                "min": "",
+                "max": "",
+                "layout": "block",
+                "button_label": "Add Row",
+                "sub_fields": [
+                    {
+                        "key": "field_53b8910b2bddf",
+                        "label": "Anchor",
+                        "name": "row_anchor",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "(Optional) Add anchor to link to this row - ie. http:\/\/site.com\/page\/#this-anchor",
+                        "prepend": "#",
+                        "append": "",
+                        "formatting": "none",
+                        "maxlength": "",
+                        "readonly": 0,
+                        "disabled": 0
+                    },
+                    {
+                        "key": "field_53b84b9b72618",
+                        "label": "Column",
+                        "name": "column",
+                        "type": "repeater",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "min": "",
+                        "max": "",
+                        "layout": "block",
+                        "button_label": "Add Column",
+                        "sub_fields": [
+                            {
+                                "key": "field_53b85898bcd7e",
+                                "label": "Width",
+                                "name": "col_width",
+                                "type": "select",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": 50,
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "choices": {
+                                    "col_sm_12": "100%",
+                                    "col_sm_9": "75%",
+                                    "col_sm_8": "66%",
+                                    "col_sm_6": "50%",
+                                    "col_sm_4": "33%",
+                                    "col_sm_3": "25%"
+                                },
+                                "default_value": {
+                                    "col_md_12": "col_md_12"
+                                },
+                                "allow_null": 0,
+                                "multiple": 0,
+                                "ui": 0,
+                                "ajax": 0,
+                                "placeholder": "",
+                                "disabled": 0,
+                                "readonly": 0
+                            },
+                            {
+                                "key": "field_53cab55a3431c",
+                                "label": "Content",
+                                "name": "col_content",
+                                "type": "select",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": 50,
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "choices": {
+                                    "text": "Add Text",
+                                    "post": "Add a Post",
+                                    "image": "Add Image",
+                                    "video": "Add a Video",
+                                    "form": "Contact Form",
+                                    "map": "Add a Map",
+                                    "accordion": "Accordion Panels"
+                                },
+                                "default_value": [],
+                                "allow_null": 0,
+                                "multiple": 0,
+                                "ui": 0,
+                                "ajax": 0,
+                                "placeholder": "",
+                                "disabled": 0,
+                                "readonly": 0
+                            },
+                            {
+                                "key": "field_53b85948bcd7f",
+                                "label": "Text",
+                                "name": "col_text",
+                                "type": "wysiwyg",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": [
+                                    {
+                                        "rule_0": {
+                                            "field": "field_53cab55a3431c",
+                                            "operator": "==",
+                                            "value": "text"
+                                        }
+                                    }
+                                ],
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "toolbar": "full",
+                                "media_upload": 1,
+                                "tabs": "all"
+                            },
+                            {
+                                "key": "field_53cab5a034320",
+                                "label": "Post",
+                                "name": "col_post",
+                                "type": "post_object",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": [
+                                    {
+                                        "rule_0": {
+                                            "field": "field_53cab55a3431c",
+                                            "operator": "==",
+                                            "value": "post"
+                                        }
+                                    }
+                                ],
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "post_type": [],
+                                "taxonomy": [],
+                                "allow_null": 0,
+                                "multiple": 0,
+                                "return_format": "object",
+                                "ui": 1
+                            },
+                            {
+                                "key": "field_53d57514dc8db",
+                                "label": "Image",
+                                "name": "col_image",
+                                "type": "image",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": [
+                                    {
+                                        "rule_0": {
+                                            "field": "field_53cab55a3431c",
+                                            "operator": "==",
+                                            "value": "image"
+                                        }
+                                    }
+                                ],
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "return_format": "url",
+                                "preview_size": "medium",
+                                "library": "all",
+                                "min_width": 0,
+                                "min_height": 0,
+                                "min_size": 0,
+                                "max_width": 0,
+                                "max_height": 0,
+                                "max_size": 0,
+                                "mime_types": ""
+                            },
+                            {
+                                "key": "field_53d57546dc8dc",
+                                "label": "Video",
+                                "name": "col_video",
+                                "type": "oembed",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": [
+                                    {
+                                        "rule_0": {
+                                            "field": "field_53cab55a3431c",
+                                            "operator": "==",
+                                            "value": "video"
+                                        }
+                                    }
+                                ],
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "width": "",
+                                "height": ""
+                            },
+                            {
+                                "key": "field_53ed594619b4f",
+                                "label": "Form",
+                                "name": "col_form",
+                                "type": "cf7",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_53cab55a3431c",
+                                            "operator": "==",
+                                            "value": "form"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "allow_null": 0,
+                                "multiple": 0,
+                                "disable": [
+                                    0
+                                ]
+                            },
+                            {
+                                "key": "field_53e91ae1c61c6",
+                                "label": "Map",
+                                "name": "col_map",
+                                "type": "google_map",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_53cab55a3431c",
+                                            "operator": "==",
+                                            "value": "map"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "center_lat": "",
+                                "center_lng": "",
+                                "zoom": "",
+                                "height": ""
+                            },
+                            {
+                                "key": "field_53e921eca417a",
+                                "label": "Accordions",
+                                "name": "col_accordions",
+                                "type": "repeater",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_53cab55a3431c",
+                                            "operator": "==",
+                                            "value": "accordion"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "min": "",
+                                "max": "",
+                                "layout": "block",
+                                "button_label": "Add Panel",
+                                "sub_fields": [
+                                    {
+                                        "key": "field_53e92210a417b",
+                                        "label": "Title",
+                                        "name": "accordion_title",
+                                        "type": "text",
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "default_value": "",
+                                        "placeholder": "",
+                                        "prepend": "",
+                                        "append": "",
+                                        "maxlength": "",
+                                        "readonly": 0,
+                                        "disabled": 0
+                                    },
+                                    {
+                                        "key": "field_53e9222aa417c",
+                                        "label": "Content",
+                                        "name": "accordion_content",
+                                        "type": "wysiwyg",
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "default_value": "",
+                                        "toolbar": "full",
+                                        "media_upload": 0,
+                                        "tabs": "all"
+                                    }
+                                ]
+                            },
+                            {
+                                "key": "field_53b86e775f26e",
+                                "label": "Class",
+                                "name": "col_class",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": 50,
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "(Optional) Add CSS class",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": "",
+                                "readonly": 0,
+                                "disabled": 0
+                            },
+                            {
+                                "key": "field_53b85958bcd80",
+                                "label": "Hide",
+                                "name": "col_hide",
+                                "type": "true_false",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": 50,
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "message": "Hide Column? (Remove content without deleting)",
+                                "default_value": 0
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "page-templates\/content-builder.php"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "seamless",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "the_content"
+        ],
+        "active": 1,
+        "description": ""
+    },
+    {
+        "key": "group_53d59a4532c81",
+        "title": "Panel Details",
+        "fields": [
+            {
+                "key": "field_53d59a51dbac9",
+                "label": "Videos",
+                "name": "panel_videos",
+                "type": "repeater",
+                "instructions": "(Optional) Embed panel videos on page.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "min": "",
+                "max": "",
+                "layout": "row",
+                "button_label": "Add Video",
+                "sub_fields": [
+                    {
+                        "key": "field_53e9146f01dc7",
+                        "label": "Video Link",
+                        "name": "panel_video_link",
+                        "type": "oembed",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "width": "",
+                        "height": ""
+                    },
+                    {
+                        "key": "field_53f025d5798b9",
+                        "label": "Video TItle",
+                        "name": "panel_video_title",
+                        "type": "text",
+                        "instructions": "Optional",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": "",
+                        "readonly": 0,
+                        "disabled": 0
+                    },
+                    {
+                        "key": "field_53f025fb798ba",
+                        "label": "Video Description",
+                        "name": "panel_video_description",
+                        "type": "wysiwyg",
+                        "instructions": "Optional",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "toolbar": "full",
+                        "media_upload": 0,
+                        "tabs": "all"
+                    }
+                ]
+            },
+            {
+                "key": "field_53e914a201dc8",
+                "label": "panel_day",
+                "name": "panel_day",
+                "type": "text",
+                "instructions": "DO NOT USE - WILL BE CREATED BY SCHEDULE",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "hidden",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_53e9150b01dc9",
+                "label": "panel_start",
+                "name": "panel_start",
+                "type": "text",
+                "instructions": "DO NOT USE - WILL BE CREATED BY SCHEDULE",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "hidden",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "panel"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    },
+    {
+        "key": "group_53f024f45ecb4",
+        "title": "Panel Page Builder",
+        "fields": [
+            {
+                "key": "field_53f024f4611ad",
+                "label": "Panel Category",
+                "name": "panel_category",
+                "type": "taxonomy",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "taxonomy": "panel_year",
+                "field_type": "select",
+                "allow_null": 0,
+                "load_save_terms": 0,
+                "return_format": "id",
+                "multiple": 0,
+                "add_term": 1,
+                "load_terms": 0,
+                "save_terms": 0
+            },
+            {
+                "key": "field_53f024f4611c6",
+                "label": "Text Before",
+                "name": "panel_text_before",
+                "type": "wysiwyg",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "toolbar": "full",
+                "media_upload": 1,
+                "tabs": "all"
+            },
+            {
+                "key": "field_53f024f4611da",
+                "label": "Text After",
+                "name": "panel_text_after",
+                "type": "wysiwyg",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "toolbar": "full",
+                "media_upload": 1,
+                "tabs": "all"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "page-templates\/content-panels.php"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "the_content"
+        ],
+        "active": 1,
+        "description": ""
+    },
+    {
+        "key": "group_53c497c227351",
+        "title": "Schedule Builder",
+        "fields": [
+            {
+                "key": "field_53b74f0d61326",
+                "label": "How To Build the Schedule",
+                "name": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "<ol>\r\n<li>Create a <span style=\"text-decoration:underline\">new<\/span> schedule post for <span style=\"text-decoration:underline\">each<\/span> festival day<\/li>\r\n<li>Add Time Blocks as needed: blocks can be assigned to existing Films &amp; Panels, automatically designate a 'Break', or hold custom text<\/li>\r\n<li>Set the duration - <span style=\"text-decoration:underline\">in minutes<\/span> - for each block\r\n<ul>\r\n<li>\u2022 Film blocks will automatically use the film running time as its duration<\/li>\r\n<li>\u2022 Text blocks may have a '0' duration - these timestamps can be hidden by adding <code>non-timed<\/code> in the <b>Style<\/b> input field<\/li>\r\n<\/ul><\/li>\r\n<li>Blocks can be rearranged by dragging on the block number in the left column<\/li>\r\n<\/ol>",
+                "esc_html": 0
+            },
+            {
+                "key": "field_53b752da5d873",
+                "label": "Festival Day",
+                "name": "festival_day",
+                "type": "date_picker",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": 50,
+                    "class": "",
+                    "id": ""
+                },
+                "display_format": "l F jS, Y",
+                "return_format": "l F jS, Y",
+                "first_day": 1
+            },
+            {
+                "key": "field_55b40db128bc6",
+                "label": "Day Start",
+                "name": "day_start",
+                "type": "date_time_picker",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": 50,
+                    "class": "",
+                    "id": ""
+                },
+                "show_date": "false",
+                "date_format": "m\/d\/y",
+                "time_format": "h:mm tt",
+                "show_week_number": "false",
+                "picker": "select",
+                "save_as_timestamp": "true",
+                "get_as_timestamp": "false"
+            },
+            {
+                "key": "field_53b74f2f61327",
+                "label": "Block",
+                "name": "block",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "min": 1,
+                "max": "",
+                "layout": "row",
+                "button_label": "Add Block",
+                "sub_fields": [
+                    {
+                        "key": "field_53b750556132a",
+                        "label": "Type",
+                        "name": "block_type",
+                        "type": "radio",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "film": "Film",
+                            "panel": "Panel",
+                            "text": "Text",
+                            "break": "Break"
+                        },
+                        "other_choice": 0,
+                        "save_other_choice": 0,
+                        "default_value": "film",
+                        "layout": "horizontal"
+                    },
+                    {
+                        "key": "field_53b750846132b",
+                        "label": "Film",
+                        "name": "block_film",
+                        "type": "post_object",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_53b750556132a",
+                                    "operator": "==",
+                                    "value": "film"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "post_type": [
+                            "film"
+                        ],
+                        "taxonomy": [],
+                        "allow_null": 0,
+                        "multiple": 0,
+                        "return_format": "object",
+                        "ui": 1
+                    },
+                    {
+                        "key": "field_53e913598c815",
+                        "label": "Panel",
+                        "name": "block_panel",
+                        "type": "post_object",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_53b750556132a",
+                                    "operator": "==",
+                                    "value": "panel"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "post_type": [
+                            "panel"
+                        ],
+                        "taxonomy": [],
+                        "allow_null": 0,
+                        "multiple": 0,
+                        "return_format": "object",
+                        "ui": 1
+                    },
+                    {
+                        "key": "field_53e912720bdbb",
+                        "label": "Content Level",
+                        "name": "content_level",
+                        "type": "select",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_53b750556132a",
+                                    "operator": "==",
+                                    "value": "film"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "all": "All ages",
+                            "11": "11 years and older",
+                            "16": "16 years and older",
+                            "18": "18 years and older"
+                        },
+                        "default_value": {
+                            "all": "all"
+                        },
+                        "allow_null": 0,
+                        "multiple": 0,
+                        "ui": 0,
+                        "ajax": 0,
+                        "placeholder": "",
+                        "disabled": 0,
+                        "readonly": 0
+                    },
+                    {
+                        "key": "field_53b750cd6132c",
+                        "label": "Text",
+                        "name": "block_text",
+                        "type": "textarea",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_53b750556132a",
+                                    "operator": "==",
+                                    "value": "text"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "rows": 3,
+                        "new_lines": "",
+                        "readonly": 0,
+                        "disabled": 0
+                    },
+                    {
+                        "key": "field_55b40d3128bc5",
+                        "label": "Duration",
+                        "name": "block_duration",
+                        "type": "number",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_53b750556132a",
+                                    "operator": "!=",
+                                    "value": "film"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "minutes",
+                        "min": "",
+                        "max": "",
+                        "step": 1,
+                        "readonly": 0,
+                        "disabled": 0
+                    },
+                    {
+                        "key": "field_53b750e86132d",
+                        "label": "Style",
+                        "name": "block_style",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "CSS class (Optional)",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": "",
+                        "readonly": 0,
+                        "disabled": 0
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "schedule"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "the_content"
+        ],
+        "active": 1,
+        "description": ""
+    },
+    {
+        "key": "group_53e916db12f7c",
+        "title": "Schedule Page Builder",
+        "fields": [
+            {
+                "key": "field_53eed572636c2",
+                "label": "Schedule Category",
+                "name": "schedule_category",
+                "type": "taxonomy",
+                "instructions": "Columns appear in Ascending order of publication date. Schedules must be created in order: Thurs - Sun. ",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "taxonomy": "schedule_year",
+                "field_type": "select",
+                "allow_null": 0,
+                "add_term": 1,
+                "save_terms": 0,
+                "load_terms": 0,
+                "return_format": "id",
+                "multiple": 0
+            },
+            {
+                "key": "field_53e9184a12d63",
+                "label": "Text Before",
+                "name": "schedule_text_before",
+                "type": "wysiwyg",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "toolbar": "full",
+                "media_upload": 1,
+                "tabs": "all"
+            },
+            {
+                "key": "field_53e9187212d64",
+                "label": "Text After",
+                "name": "schedule_text_after",
+                "type": "wysiwyg",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "toolbar": "full",
+                "media_upload": 1,
+                "tabs": "all"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "page-templates\/content-schedule.php"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "the_content"
+        ],
+        "active": 1,
+        "description": ""
+    },
+    {
+        "key": "group_53f0b19c69861",
+        "title": "Selections Page Builder",
+        "fields": [
+            {
+                "key": "field_53f0b19c6b666",
+                "label": "Year to Display",
+                "name": "selections_category",
+                "type": "taxonomy",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "taxonomy": "film_year",
+                "field_type": "select",
+                "allow_null": 0,
+                "load_save_terms": 0,
+                "return_format": "id",
+                "multiple": 0,
+                "add_term": 1,
+                "load_terms": 0,
+                "save_terms": 0
+            },
+            {
+                "key": "field_53f0b1daa076e",
+                "label": "Content to Display",
+                "name": "selections_content",
+                "type": "radio",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "highlight": "Highlight Films",
+                    "winners": "Best of Fest Winners",
+                    "none": "None"
+                },
+                "other_choice": 0,
+                "save_other_choice": 0,
+                "default_value": "",
+                "layout": "horizontal"
+            },
+            {
+                "key": "field_53f0b19c6b68f",
+                "label": "Text Before",
+                "name": "selections_text_before",
+                "type": "wysiwyg",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "toolbar": "full",
+                "media_upload": 1,
+                "tabs": "all"
+            },
+            {
+                "key": "field_53f0b19c6b6b4",
+                "label": "Text After",
+                "name": "selections_text_after",
+                "type": "wysiwyg",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "toolbar": "full",
+                "media_upload": 1,
+                "tabs": "all"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "page-templates\/content-selections.php"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "the_content"
+        ],
+        "active": 1,
+        "description": ""
+    },
+    {
+        "key": "group_53c497c2322cc",
+        "title": "Site Options",
+        "fields": [
+            {
+                "key": "field_53b747a1966a7",
+                "label": "General",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_53c4981298bc6",
+                "label": "Festival Date",
+                "name": "festival_date",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": 50,
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_53c4984c98bc7",
+                "label": "Festival Year",
+                "name": "festival_year",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": 50,
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": 4,
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_53e8ffd36ad21",
+                "label": "Logo",
+                "name": "site_logo",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": 33,
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_53eba40850a5c",
+                "label": "Icons",
+                "name": "site_icons",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": 66,
+                    "class": "",
+                    "id": ""
+                },
+                "min": 4,
+                "max": 4,
+                "layout": "table",
+                "button_label": "Add Icon",
+                "sub_fields": [
+                    {
+                        "key": "field_53eba43950a5d",
+                        "label": "Icon",
+                        "name": "icon_image",
+                        "type": "image",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "url",
+                        "preview_size": "full",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    }
+                ]
+            },
+            {
+                "key": "field_53b746c9966a2",
+                "label": "Email Link",
+                "name": "email_link",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "mailto:",
+                "append": "",
+                "formatting": "none",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_53b7470e966a3",
+                "label": "Facebook Link",
+                "name": "facebook_link",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "http:\/\/facebook.com\/",
+                "append": "",
+                "formatting": "none",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_53b74729966a4",
+                "label": "Twitter Link",
+                "name": "twitter_link",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "http:\/\/twitter.com\/",
+                "append": "",
+                "formatting": "none",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_53b7474c966a5",
+                "label": "Vimeo Link",
+                "name": "vimeo_link",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "https:\/\/vimeo.com\/",
+                "append": "",
+                "formatting": "none",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_53b74776966a6",
+                "label": "Instagram Link",
+                "name": "instagram_link",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "http:\/\/instagram.com\/",
+                "append": "",
+                "formatting": "none",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_53b747d1966a8",
+                "label": "Copyright Info",
+                "name": "copyright_info",
+                "type": "text",
+                "instructions": "Do not add copyright year, it is generated automatically.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "\u00a9 2008-20##",
+                "append": "",
+                "formatting": "html",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_53b7480b966a9",
+                "label": "Legal Info",
+                "name": "legal_info",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": "",
+                "new_lines": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_53f0fd35b6910",
+                "label": "Laurels",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_53f0fd59b6911",
+                "label": "Laurel Images",
+                "name": "laurels",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "min": "",
+                "max": "",
+                "layout": "table",
+                "button_label": "Add Laurel",
+                "sub_fields": [
+                    {
+                        "key": "field_53f0fd88b6912",
+                        "label": "Image",
+                        "name": "laurel_img",
+                        "type": "image",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "array",
+                        "preview_size": "full",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    }
+                ]
+            },
+            {
+                "key": "field_545e573ca4922",
+                "label": "Modals",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_545e5745a4923",
+                "label": "Modals",
+                "name": "modals",
+                "type": "repeater",
+                "instructions": "Add global modal windows available on all pages",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "min": "",
+                "max": "",
+                "layout": "row",
+                "button_label": "Add Modal",
+                "sub_fields": [
+                    {
+                        "key": "field_545e5f8d99253",
+                        "label": "Modal Title",
+                        "name": "modal_title",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": "",
+                        "readonly": 0,
+                        "disabled": 0
+                    },
+                    {
+                        "key": "field_545e578da4924",
+                        "label": "Modal Content",
+                        "name": "modal_content",
+                        "type": "wysiwyg",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "tabs": "all",
+                        "toolbar": "full",
+                        "media_upload": 1
+                    },
+                    {
+                        "key": "field_545e5bdf68ed0",
+                        "label": "Modal Link",
+                        "name": "modal_link",
+                        "type": "text",
+                        "instructions": "Unique value for link",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "ie. 'foo' =  <a href=\"#fooModal\" data-toggle=\"modal\">",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": "",
+                        "readonly": 0,
+                        "disabled": 0
+                    }
+                ]
+            },
+            {
+                "key": "field_53b861e1d91d7",
+                "label": "Widgets",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_53b861ecd91d8",
+                "label": "Twitter Widget Embed Code",
+                "name": "twitter_widget",
+                "type": "textarea",
+                "instructions": "<a href=\"https:\/\/twitter.com\/settings\/widgets\" target=\"blank\">Create\/Edit Widget<\/a> | <a href=\"https:\/\/dev.twitter.com\/docs\/embedded-timelines\" target=\"_blank\">Documentation<\/a>",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": "",
+                "new_lines": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_53b86216d91d9",
+                "label": "Facebook Widget Script",
+                "name": "facebook_widget_script",
+                "type": "textarea",
+                "instructions": "<a href=\"https:\/\/developers.facebook.com\/docs\/plugins\/like-box-for-pages\" target=\"blank\">Create\/Edit Widget<\/a>",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": "",
+                "new_lines": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_53b86228d91da",
+                "label": "Facebook Widget Embed Code",
+                "name": "facebook_widget",
+                "type": "textarea",
+                "instructions": "<a href=\"https:\/\/developers.facebook.com\/docs\/plugins\/like-box-for-pages\" target=\"blank\">Create\/Edit Widget<\/a>",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": "",
+                "new_lines": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_53b74821966aa",
+                "label": "Analytics",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_53b74841966ab",
+                "label": "Tracking Code",
+                "name": "ga_header",
+                "type": "textarea",
+                "instructions": "<a href=\"http:\/\/www.google.com\/analytics\/\" target=\"_blank\">http:\/\/www.google.com\/analytics\/<\/a>",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": "",
+                "new_lines": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_53b74862966ac",
+                "label": "Meta Data",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_53b74870966ad",
+                "label": "Meta Keywords",
+                "name": "meta_keywords",
+                "type": "textarea",
+                "instructions": "Separate keywords by comma",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": "",
+                "new_lines": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_53b7488b966ae",
+                "label": "Meta Description",
+                "name": "meta_description",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": "",
+                "new_lines": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_53b748ab966af",
+                "label": "Facebook Insights ID",
+                "name": "fb_admin",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "formatting": "none",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_53b748c9966b0",
+                "label": "Facebook Open Graph - Title",
+                "name": "og_title",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "formatting": "none",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_53b748e8966b1",
+                "label": "Facebook Open Graph - Description",
+                "name": "og_description",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "formatting": "none",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_53b748fd966b2",
+                "label": "Facebook Open Graph - Url",
+                "name": "og_url",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "formatting": "none",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_53b74915966b3",
+                "label": "Facebook Open Graph - Image",
+                "name": "og_image",
+                "type": "image",
+                "instructions": "Image should be 1200 x 630 pixels",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "preview_size": "thumbnail",
+                "library": "all",
+                "return_format": "url",
+                "min_width": 0,
+                "min_height": 0,
+                "min_size": 0,
+                "max_width": 0,
+                "max_height": 0,
+                "max_size": 0,
+                "mime_types": ""
+            },
+            {
+                "key": "field_53b74942966b4",
+                "label": "Facebook Open Graph - Type",
+                "name": "og_type",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "formatting": "none",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "acf-options"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    },
+    {
+        "key": "group_53c497c24aaaf",
+        "title": "Sponsor Details",
+        "fields": [
+            {
+                "key": "field_53b755093294c",
+                "label": "Logo",
+                "name": "sponsor_logo",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": 0,
+                "min_height": 0,
+                "min_size": 0,
+                "max_width": 0,
+                "max_height": 0,
+                "max_size": 0,
+                "mime_types": ""
+            },
+            {
+                "key": "field_53b755243294d",
+                "label": "URL",
+                "name": "sponsor_url",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "formatting": "none",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "sponsor"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "the_content"
+        ],
+        "active": 1,
+        "description": ""
+    }
+]
