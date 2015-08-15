@@ -1,0 +1,82 @@
+//
+// Set our Variables
+// --------------------------------------------------
+
+
+// Media queries breakpoints
+// --------------------------------------------------
+
+// Extra small screen / phone
+@screen-xs:                  480px;
+@screen-xs-min:              @screen-xs;
+@screen-phone:               @screen-xs-min;
+
+// Small screen / tablet
+@screen-sm:                  768px;
+@screen-sm-min:              @screen-sm;
+@screen-tablet:              @screen-sm-min;
+
+// Medium screen / desktop
+@screen-md:                  992px;
+@screen-md-min:              @screen-md;
+@screen-desktop:             @screen-md-min;
+
+// Large screen / wide desktop
+@screen-lg:                  1200px;
+@screen-lg-min:              @screen-lg;
+@screen-lg-desktop:          @screen-lg-min;
+
+// So media queries don't overlap when required, provide a maximum
+@screen-xs-max:              (@screen-sm-min - 1);
+@screen-sm-max:              (@screen-md-min - 1);
+@screen-md-max:              (@screen-lg-min - 1);
+
+
+
+// Color Variables
+// --------------------------------------------------
+@white      : #fff;
+@black      : #000;
+@blue       : #06569D;
+@d-blue     : #234F86;
+@l-grey     : #EFEFEF;
+@grey       : #ccc;
+@d-grey     : #555;
+@bs-grey    : #ddd;
+@bs-l-grey  : #f9f9f9;
+@yellow     : #fab800;
+@green      : #80c247;
+@teal       : #0094c1;
+@red        : #f0583f;
+
+
+// Typography Variables
+// --------------------------------------------------
+@futura     : 'futura-pt',sans-serif;
+@sans       : 'Open Sans', sans-serif;
+
+@base-size  : 16px;
+@base-lead  : 1.42857143;
+
+@loose      : 0.02em;
+@looser     : 0.04em;
+@loosest    : 0.06em;
+@tight      : -0.02em;
+@tighter    : -0.04em;
+@tightest   : -0.06em;
+
+@uploads_dir: '/wp-content/uploads/';
+
+.bg(@filename) {
+    background-image: url('@{uploads_dir}@{filename}');
+    background-repeat: no-repeat;
+}
+.flip() {
+    -webkit-transform: scaleX(-1);
+       -moz-transform: scaleX(-1);
+        -ms-transform: scaleX(-1);
+         -o-transform: scaleX(-1);
+            transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}

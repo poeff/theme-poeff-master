@@ -1,0 +1,82 @@
+//
+// Navbar Styles
+// --------------------------------------------------
+
+.navbar-default {
+    background-color: @white;
+    border-color: @blue;
+    font-family: @futura;
+    .navbar-nav {
+        > li {
+            &.active {
+                > a,
+                > a:hover,
+                > a:focus {
+                    background-color: transparent;
+                    color: @red;
+                }
+            }
+            &.open {
+                > a,
+                > a:hover,
+                > a:focus {
+                    background-color: lighten(@l-grey, 2.5%);
+                    color: @teal;
+                }
+            }
+            > a {
+                color: @blue;
+                // font-size: 1.25em;
+                font-size: 1.111em;
+                font-weight: 400;
+                letter-spacing: @loose;
+                &:hover,
+                &:focus {
+                    color: @teal;
+                }
+            }
+            .navbar-btn {
+                font-size: 0.889em;
+                letter-spacing: @loose;
+            }
+            .dropdown-menu {
+                font-size: 0.944em;
+                > li {                    
+                    &.active {
+                        > a,
+                        > a:active,
+                        > a:focus {
+                            background-color: transparent;
+                            color: @red;
+                        }
+                    }
+                    > a {
+                        color: @blue;
+                        letter-spacing: @loose;
+                        &:hover,
+                        &:focus {
+                            background-color: @blue;
+                            color: @white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #donate-nav {
+        margin-right: 0;
+    }
+    .navbar-toggle {
+        border-color: @blue;
+        &:hover,
+        &:focus {
+            background-color: @blue;
+            .icon-bar {
+                background-color: @white;
+            }
+        }
+        .icon-bar {
+            background-color: @blue;
+        }
+    }
+}

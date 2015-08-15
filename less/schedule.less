@@ -1,0 +1,110 @@
+//
+// Schedule Page
+// --------------------------------------------------
+
+
+// Content Ratings
+// --------------------------------------------------
+.level-all {
+    color: @green;
+}
+.level-11 {
+    color: @teal;
+}
+.level-16 {
+    color: @yellow;
+}
+.level-18 {
+    color: @red;
+}
+#key {
+    margin-left: 0;
+    > li {
+        line-height: 1;
+        margin-bottom: 5px;
+        .fa-li {
+            left: 0;
+            margin-right: 5px;
+            position: relative;
+            top: -1px;
+            width: auto;
+            font-size: 0.750em;
+            line-height: 1.25;
+        }
+    }
+}
+
+// Grid
+// --------------------------------------------------
+
+#schedule-grid {
+    padding: 0 15px;
+    > div {
+        padding: 0;
+        margin-right: -1px;
+    }
+    .schedule {
+        dt {
+            color: @white;
+            font-family: @futura;
+            font-weight: 500;
+            letter-spacing: @loose;
+            text-align: center;
+            padding: 10px 0;
+            border: 1px solid @bs-grey;
+        }
+        dd {
+            position: relative;
+            padding: 10px 15px;
+            margin-top: -1px;
+            border: 1px solid @bs-grey;
+            font-size: 0.875em;
+            &:nth-child(odd) {
+                background-color: @bs-l-grey;
+            }
+            &.break {
+                background-color: #ededed;
+                font-style: italic;
+                .block-info {
+                    text-transform: uppercase;
+                    letter-spacing: @looser;
+                }
+            }
+            &.non-timed {
+                .block-time {
+                    display: none;
+                }
+            }
+            .block-time,
+            .block-info {
+                display: block;
+            }
+            .fa {
+                font-size: 1.143em;
+                position: absolute;
+                right: 15px;
+                top: 10px;
+            }
+        }
+        &#schedule-column-1 {
+            dt {
+                background-color: @teal;
+            }
+        }
+        &#schedule-column-2 {
+            dt {
+                background-color: @red;
+            }
+        }
+        &#schedule-column-3 {
+            dt {
+                background-color: @yellow;
+            }
+        }
+        &#schedule-column-4 {
+            dt {
+                background-color: @green;
+            }
+        }
+    }
+}

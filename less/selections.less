@@ -1,0 +1,106 @@
+//
+// Selections Page
+// --------------------------------------------------
+
+// Winners Section
+// --------------------------------------------------
+.winner {
+    margin: 30px 0 50px;
+    .thumbnail {
+        margin-bottom: 0;
+    }
+    .laurel {
+        display: inline-block;
+        min-width: 320px;
+        min-height: 165px;
+        background-position: 50% 50%;
+        &.best-animation                { .bg( 'bof-animated.svg' ); }
+        &.best-feature-documentary      { .bg( 'bof-feature-documentary.svg' ); }
+        &.best-feature-narrative        { .bg( 'bof-feature-narrative.svg' ); }
+        &.best-short-documentary        { .bg( 'bof-short-documentary.svg' ); }
+        &.best-short-narrative          { .bg( 'bof-short-narrative.svg' ); }
+        &.best-student-documentary      { .bg( 'bof-student-documentary.svg' ); }
+        &.best-student-film             { .bg( 'bof-student.svg' ); }
+        &.best-student-narrative        { .bg( 'bof-student-narrative.svg' ); }
+        &.expose-award                  { .bg( 'bof-expose.svg' ); }
+        &.expose-feature-documentary    { .bg( 'bof-expose-feature.svg' ); }
+        &.expose-short-documentary      { .bg( 'bof-expose-short.svg' ); }
+        &.student-choice                { .bg( 'bof-student-choice.svg' ); }
+        &.svp-6-8-most-inspiring        { .bg( 'bof-svp-middle-school.svg' ); }
+        &.svp-9-12-most-inspiring       { .bg( 'bof-svp-high-school.svg' ); }
+        &.svp-most-inspiring            { .bg( 'bof-svp.svg'); }
+        &.audience-favorite             { .bg( 'bof-audience-favorite.svg'); }
+        &.best-message                  { .bg( 'bof-best-message.svg'); }
+    }
+}
+
+
+// Selections List
+// --------------------------------------------------
+.selections {
+    padding: 0 15px;
+    margin-bottom: 30px;
+    // .row {
+        // > div {
+            // &:first-child {
+            //     padding-left: 0;
+            // }
+            // &:last-child {
+            //     padding-right: 0;
+            // }
+            border-bottom: 1px solid @bs-grey;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            h4 {
+                margin: 0px 0 0;
+            }
+
+            tr:not(.row-0) {
+                h4 {
+                    margin: 30px 0 0;
+                }
+                .director {
+                    visibility: hidden;
+                }
+            }
+
+            th {
+              border-bottom: 1px solid @d-grey;
+              border-top: 0 none !important;
+            }
+            td {
+              border-bottom: 1px solid #ddd;
+              border-top: 0 none !important;
+            }
+
+            th,
+            td {
+                &:nth-child(odd) {
+                    padding-left: 0;
+                }
+                &:nth-child(even) {
+                    padding-right: 0;
+                }
+            }
+
+            h5 {
+                font-family: @sans;
+                font-size: 1em;
+                line-height: @base-lead;
+                margin: 0;
+                small {
+                    display: block;
+                    margin-top: 4px;
+                }
+            }
+        }
+        // .headers {
+        //     &:not(:first-of-type) {
+        //         > div {
+        //             padding-top: 32px;
+        //             border-color: @d-grey;
+        //         }
+        //     }
+        // }
+    // }
+//}

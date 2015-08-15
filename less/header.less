@@ -1,0 +1,107 @@
+//
+// Page Header - Logo Styles
+// --------------------------------------------------
+
+.site-header {
+    padding-top: 35px;
+    .site-title {
+        font-family: @futura;
+        line-height: 1;
+        .logo-globe {
+            width: 78px;
+            height: auto;
+            img {
+                margin-bottom: -66px;
+            }
+        }
+        .logo-text {
+            width: 100%;
+            .site-name {
+                display: block;
+                color: @d-blue;
+                font-weight: 700;
+                font-size: 1.625em; //26
+                text-transform: uppercase;
+                padding-left: 76px;
+                .site-name-top {
+                    display: block;
+                    font-size: 1em; //26
+                    white-space: nowrap;
+                }
+                .site-name-bottom {
+                    display: block;
+                    font-size: 1.231em; //32
+                    white-space: nowrap;
+                }
+            }
+            .site-slogan {
+                background-color: @d-blue;
+                color: @white;
+                font-weight: 400;
+                font-size: 0.750em; //12
+                letter-spacing: 0.05em;
+                // padding: 4px 10px;
+                margin-top: 12px;
+                display: block;
+                width: 100%;
+                // text-align: left;
+                padding: 4px 10px 6px;
+                text-align: center;
+            }
+        }
+        .logo-year {
+            clear: right;
+            margin-top: 10px;
+            width: 100%;
+            .festival-date {
+                float: left;
+                font-size: 1.625em; //26
+                left: 0;
+                top: 0;
+                width: 100%;
+                color: @d-grey;
+                font-weight: 300;
+                letter-spacing: 0.02em;
+                display: inline-block;
+                position: relative;
+            }
+            .festival-year {
+                display: inline-block;
+                float: right;
+                font-size: 1.875em; //30
+                left: 0;
+                top: -28px;
+                position: relative;
+                > span {
+                    background: none;
+                    font-weight: 500;
+                    height: auto;
+                    margin: 0 -2px;
+                    text-align: center;
+                    width: auto;
+                    display: inline-block;
+                    &.dove {
+                        color: @teal;
+                    }
+                    &.heart {
+                        color: @red;
+                    }
+                    &.justice {
+                        color: @yellow;
+                    }
+                    &.recycle {
+                        color: @green;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.site-title .list-inline {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 150px;
+}
+

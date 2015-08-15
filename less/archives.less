@@ -1,0 +1,202 @@
+//
+// Archive Page
+// --------------------------------------------------
+
+#films-archive {
+    // table-layout: fixed;
+    th {
+        &:first-child {
+            width: 200px;
+        }
+        &:last-child {
+            width: 40px;
+        }
+    }
+    font-size: 0.929em;
+    td {
+        font-size: 0.800em;
+    }
+}
+// #films-archive_wrapper .list-inline .fa {
+//     font-size: 18px;
+//     color: #777;
+//     margin: 6px 0 -6px;
+//     float: left;
+// }
+
+
+div.dataTables_filter,
+div.dataTables_length {
+    margin: 15px 0 0 15px;
+    padding-left: 30px;
+    position: relative;
+    &:before {
+        font: 1.66em/1 FontAwesome;
+        position: absolute;
+    }
+    label {
+        float: none !important;
+     }
+}
+div.dataTables_length select {
+  width: 100% !important;
+}
+div.dataTables_length:before {
+    content: "\f03a";
+    top: 4px;
+    left: 0;
+}
+div.dataTables_filter:before {
+    content: "\f002";
+    top: 2px;
+    right: 90%;
+    right: ~"calc(100% - 25px)";
+}
+.dataTables_info {
+  margin: 0 !important;
+  text-align: center;
+}
+.dataTables_paginate {
+  float: none !important;
+  margin: 10px auto !important;
+  text-align: center;
+}
+@media (min-width: 769px) and (max-width: 1199px) {
+    // .table-responsive {
+    //   border: 1px solid #dddddd;
+    //   margin-bottom: 15px;
+    //   overflow-x: auto;
+    //   overflow-y: hidden;
+    //   width: 100%;
+    // }
+    // div.dataTables_filter,
+    // div.dataTables_length,
+    // .dataTables_info,
+    // .dataTables_paginate {
+    //   margin: 15px !important;
+    // }
+}
+@media (min-width: @screen-sm-min) {
+    div.dataTables_filter,
+    div.dataTables_length {
+        margin: 0;
+    }
+    div.dataTables_filter {
+      display: inline-block;
+      float: right;
+      width: auto;
+    }
+    .dataTables_info {
+      margin: 20px 0 0;
+      text-align: left;
+    }
+    .dataTables_paginate {
+      float: right;
+      margin: 20px 0 0;
+      text-align: right;
+    }
+}
+@media (min-width: @screen-lg-min) {
+    #films-archive {
+        table-layout: fixed;
+    }
+}
+
+
+.dataTables_wrapper {
+    .dataTables_length,
+    .dataTables_filter {
+        font-size: 0.929em;
+    }
+    .table {
+        thead {
+            tr {
+                th {
+                    font-family: @futura;
+                    font-weight: 400;
+                    border-bottom-color: @d-grey;
+                    border-bottom-width: 1px;
+                    // &:nth-child(3) {
+                    //     max-width: 150px;
+                    // }
+                    &:last-child {
+                        padding-right: 24px;
+                    }
+                    &.sorting:hover {
+                        &:after {
+                            color: @blue;
+                        }
+                    }
+                    &.sorting_asc:after,
+                    &.sorting_desc:after {
+                        color: @green;
+                    }
+                }
+            }
+        }
+        tbody {
+            tr {
+                td {
+                    .country:not(:first-child):before {
+                        content: ', ';
+                    }
+                    // &:nth-child(3) {
+                    //     max-width: 150px;
+                    // }
+                    &:last-child {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+    .dataTables_info,
+    .dataTables_paginate {
+        font-size: 0.929em;
+        margin-top: 20px;
+    }
+    .pagination {
+        li {
+            a {
+                font-size: 0.875em;
+                color: @blue;
+            }
+            &.active {
+                > a,
+                > span,
+                > a:hover,
+                > span:hover,
+                > a:focus,
+                > span:focus {
+                    background-color: @green;
+                    border-color: darken(@green, 10%);
+                    color: @white;
+                }
+            }
+            &.disabled {
+                > a,
+                > a:hover,
+                > a:focus {
+                    color: @l-grey;
+                    cursor: default;
+                }
+            }
+            &.previous {
+                > a {
+                    padding-left: 12px;
+                    &:before {
+                        content: none !important;
+                    }
+                }
+            }
+            &.next {
+                > a {
+                    padding-right: 12px;
+                    &:after {
+                        content: none !important;
+                    }
+                }
+            }
+        }
+    }
+}

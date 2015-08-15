@@ -1,0 +1,44 @@
+//
+// Responsive Embeds
+// --------------------------------------------------
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+    iframe,
+    object,
+    embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+// Google Maps
+// --------------------------------------------------
+#ccc-map {
+    padding-bottom: 36%;
+    margin-bottom: 10px;
+    min-height: 300px;
+    iframe {
+        max-height: 400px;
+    }
+}
+
+// Facebook Widgets
+// --------------------------------------------------
+.fb-wrap {
+    width:50%;
+    margin: 0 auto;
+}
+.fb-like-box,
+.fb-like-box span,
+.fb-like-box span iframe[style] {
+    width: 100% !important;
+}

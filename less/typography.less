@@ -1,0 +1,136 @@
+//
+// Typography
+// --------------------------------------------------
+
+/**
+*   OPEN SANS (via GOOGLE):
+*
+*   font-family: "Open Sans", sans-serif;
+*
+*   Light       "Open Sans"     300     normal      italic
+*   Normal      "Open Sans"     400     normal      italic
+*   Semi-Bold   "Open Sans"     600     normal      italic
+*   Bold        "Open Sans"     700     normal      italic
+*   Extra-Bold  "Open Sans"     800     normal      italic
+*
+*   ========================================================
+*
+*   FUTURA (via TYPEKIT):
+*
+*   font-family: "futura-pt",sans-serif;
+*
+*   Light       "futura-pt"     300     normal      italic
+*   Book        "futura-pt"     400     normal      italic
+*   Medium      "futura-pt"     500     normal      italic
+*   Bold        "futura-pt"     700     normal      italic
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+
+body {
+    color: @d-grey;
+    font-family: @sans;
+    font-size: @base-size;
+    line-height: @base-lead;
+    font-weight: 400;
+    min-width: 320px;
+}
+
+h1,h2,h3,h4,h5,h6,
+.h1,.h2,.h3,.h4,.h5,.h6 {
+    font-family: @futura;
+}
+
+.entry-header {
+    display: inline-block;
+    width: 100%;
+}
+
+a {
+    color: @blue;
+    outline: none !important;
+    &:hover,
+    &:active,
+    &:focus {
+        color: @d-blue;
+        outline: none !important;
+        cursor: pointer;
+    }
+    .thumbnail:hover {
+        border-color: @blue;
+    }
+}
+
+a[id]:before {
+    content:"";
+    display:block;
+    height:50px;
+    margin:-30px 0 0;
+}
+
+ul, ol {
+    padding-left: 18px;
+}
+.site-content ul li {
+    padding-bottom: 8px;
+}
+
+.well {
+    hr {
+        border-color: @grey;
+    }
+}
+
+.blue { color: @blue; }
+.dark-blue { color: @d-blue; }
+.teal { color: @teal; }
+.red { color: @red; }
+.yellow { color: @yellow; }
+.green { color: @green; }
+.grey { color: @grey; }
+.dark-grey { color: @d-grey; }
+.light-grey { color: @l-grey; }
+
+.futura { font-family: @futura; }
+.sans { font-family: @sans; }
+
+.loose { letter-spacing: @loose; }
+.looser { letter-spacing: @looser; }
+
+.pad-top { padding-top: 15px; }
+.pad-right { padding-right: 15px; }
+.pad-bottom { padding-bottom: 15px; }
+.pad-left { padding-left: 15px; }
+
+.screen-reader-text {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+.overflow-text {
+    p {
+      display: inline-block;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 100%;
+  }
+}
+
+.vert-center-mix(){
+    display: table;
+    width: 100%;
+    > * {
+        display: table-cell;
+        vertical-align: middle;
+        float: none !important;
+    }
+}
+.align-vert {
+    .vert-center-mix();
+}
