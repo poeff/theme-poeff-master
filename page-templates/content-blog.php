@@ -24,10 +24,13 @@ $blog = get_field('blog_feed');
 
                                 <div class="entry-content">
                                     <?php 
+                                    //$paged = (get_query_var('paged')) ? get_query_var('paged') : 1; 
                                     $args = array( 
                                                 'post_type'      => 'post', 
                                                 'category__in'   => $blog,
-                                                'posts_per_page' => -1, 
+                                                'posts_per_page' => -1,
+                                                //'posts_per_page' => 10,
+                                                //'paged'          => $paged, 
                                                 'orderby'        => 'date', 
                                                 'order'          => DESC 
                                             );
