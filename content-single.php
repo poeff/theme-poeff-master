@@ -20,7 +20,7 @@
 					case 'Press':   $label = 'label-danger';    break;
 					default:        $label = 'label-info';
 				}
-				echo '<span class="cat-links label '.$label.'"><a href="/category/'.$slug.'">'.$name.'</a></span>';
+				echo '<span class="cat-links label '.$label.'"><a href="/'.$slug.'">'.$name.'</a></span>';
 			}
 			?>
 			<?php upbootwp_posted_on(); ?>
