@@ -20,7 +20,7 @@
                     case 'Press':   $label = 'label-danger';    break;
                     default:        $label = 'label-info';
                 }
-                echo '<span class="cat-links label '.$label.'"><a href="/category/'.$slug.'">'.$name.'</a></span>';
+                echo '<span class="cat-links label '.$label.'"><a href="/'.$slug.'">'.$name.'</a></span>';
             }
             ?>
             <?php upbootwp_posted_on(); ?>
@@ -32,6 +32,36 @@
     <div class="entry-summary">
         <?php the_excerpt(); ?>
     </div><!-- .entry-summary -->
+    <?php elseif ( is_page_template( 'page-templates/content-blog.php' ) ) : ?>
+    <div class="entry-content">
+        <?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'upbootwp')); ?>
+        <?php 
+        $author  = get_field('blog_author_name');
+        $bio   = get_field('blog_author_bio');
+        $photo = get_field('blog_author_photo');
+        if ($bio){ 
+            echo '<br><div class="well blog-bio">';
+                echo '<div class="media">';
+                    if ($photo) {
+                        echo '<div class="media-left">';
+                            echo '<img class="media-object img-rounded hidden-xs" src="'.$photo['url'].'" alt="'.$photo['alt'].'">';
+                        echo '</div>';
+                    }
+                    echo '<div class="media-body">';
+                        if ($author) echo '<h4 class="media-heading">'.$author.'</h4>';
+                        echo $bio;
+                    echo '</div>';
+                echo '</div>';
+            echo '</div>';
+        } 
+        ?>
+        <?php
+            wp_link_pages( array(
+                'before' => '<div class="page-links">' . __( 'Pages:', 'upbootwp' ),
+                'after'  => '</div>',
+            ));
+        ?>
+    </div><!-- .entry-content -->    
     <?php else : ?>
     <div class="entry-content">
         <?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'upbootwp')); ?>
