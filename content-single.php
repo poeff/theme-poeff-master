@@ -17,7 +17,7 @@
 				switch( $name ) {
 					case 'News':    $label = 'label-success';   break;
 					case 'Blog':    $label = 'label-warning';   break;
-					case 'Press':   $label = 'label-danger';    break;
+					case 'Events':  $label = 'label-danger';    break;
 					default:        $label = 'label-info';
 				}
 				echo '<span class="cat-links label '.$label.'"><a href="/'.$slug.'">'.$name.'</a></span>';
