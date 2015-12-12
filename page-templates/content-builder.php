@@ -33,6 +33,8 @@ $rows = get_field('row');
                                 $text       = $column['col_text'];
                                 $p_obj      = $column['col_post`'];
                                 $image      = $column['col_image'];
+                                $link       = $column['col_image_link'];
+                                $target     = $column['col_image_link_target'];
                                 $video      = $column['col_video'];
                                 $form       = $column['col_form'];
                                 $accordions = $column['col_accordions'];
@@ -51,7 +53,11 @@ $rows = get_field('row');
                                                 echo the_content();
                                             wp_reset_postdata();
                                         }
-                                        if ( $image ) echo '<img class="img-responsive" alt="" src="' . $image . '" />';
+                                        if ( $image ) {
+                                        	if ( $link ) echo '<a href="'.$link.'" target="'.$target.'">';
+                                        		echo '<img class="img-responsive" alt="" src="' . $image . '" />';
+                                        	if ( $link ) echo '</a>';
+                                        }
                                         if ( $video ) echo '<div class="embed-container">' . $video . '</div>';
                                         if ( $form )  echo $form;
                                         if ( $accordions ) {
